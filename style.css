@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -5,6 +6,10 @@
 html, body{
     margin: 0px;
     padding: 0px;
+    background-image: url("./assets/1678902435767.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -25,7 +30,7 @@ html, body{
 }
 
 .arm{
-    border: 1px solid red;
+    border: 1px solid rgb(10, 6, 6);
     justify-items: stretch;
 }
 
@@ -33,40 +38,58 @@ html, body{
     grid-area: a1;
     display: flex;
     flex-direction: column;
+    overflow:scroll;
+
 }
 
 .a2{
     grid-area: a2;
     display: flex;
     flex-direction: row-reverse;
+    overflow: scroll;
+
+   
 }
 
 .a3{
     grid-area: a3;
     display: flex;
     flex-direction: column-reverse;
+    overflow:scroll;
+    
 }
 
 .a4{
     grid-area: a4;
     display: flex;
+    overflow:scroll;
 }
 
 .arm-img{
     width: 16.66vw;
     height: 16.66vw;
-    border: 1px solid green;
+    border: 1px solid rgb(4, 15, 4);
+    overflow: scroll;
 }
 
 .arm-text{
     width: 16.66vw;
     height: 16.66vw;
-    border: 1px solid yellow;
+    border: 1px solid rgb(29, 29, 13);
     display: flex;
     align-items: center;
     text-align: center;
     padding: 8px;
+    background-color: rgba(255, 255, 255, 0.623);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:black;
+    overflow: scroll;
+    
 }
+
+
+/* VISUALIZZAZIONE PER TABLET */
 
 @media only screen and (max-width: 1000px) {
     .grid-container{
@@ -91,6 +114,8 @@ html, body{
         height: 50vw;
     }
 }
+
+/* VISUALIZZAZIONE PER TELEFONI */
 
 @media only screen and (max-width: 600px) {
     .grid-container{
