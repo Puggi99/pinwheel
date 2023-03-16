@@ -9,7 +9,7 @@ html, body{
     background-image: url("./assets/1678902435767.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
 }
 
 
@@ -27,18 +27,24 @@ html, body{
     ". . a3 a2 a2." 
     ". . a3 . . ." 
     ". . . . . .";
+    
 }
 
 .arm{
     border: 1px solid rgb(10, 6, 6);
-    justify-items: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 
 .a1{
     grid-area: a1;
     display: flex;
     flex-direction: column;
-    overflow:scroll;
+    
+    
+  
 
 }
 
@@ -46,7 +52,7 @@ html, body{
     grid-area: a2;
     display: flex;
     flex-direction: row-reverse;
-    overflow: scroll;
+
 
    
 }
@@ -55,27 +61,28 @@ html, body{
     grid-area: a3;
     display: flex;
     flex-direction: column-reverse;
-    overflow:scroll;
+
     
 }
 
 .a4{
     grid-area: a4;
     display: flex;
-    overflow:scroll;
+
 }
 
 .arm-img{
     width: 16.66vw;
     height: 16.66vw;
-    border: 1px solid rgb(4, 15, 4);
-    overflow: scroll;
+ 
+
+
 }
 
 .arm-text{
     width: 16.66vw;
     height: 16.66vw;
-    border: 1px solid rgb(29, 29, 13);
+   
     display: flex;
     align-items: center;
     text-align: center;
@@ -84,7 +91,8 @@ html, body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color:black;
-    overflow: scroll;
+    overflow: auto;
+    border-radius: 10% 10% 10% 10%;
     
 }
 
@@ -107,11 +115,13 @@ html, body{
     .arm-img{
         width: 50vw;
         height: 50vw;
+     
     }
     
     .arm-text{
         width: 50vw;
         height: 50vw;
+        overflow: scroll;
     }
 }
 
